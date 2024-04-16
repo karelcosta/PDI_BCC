@@ -1,11 +1,9 @@
-# pendente de correção a respeito da locaização da img bug apneas no linux
-
 import cv2
 
-img = cv2.imread("PDI_BCC/img/color_red.jpg")
-if not img.isOpened():
-    print("Erro ao acessar a imagen")
-    exit()
+img = cv2.imread("color_red.jpg")
+# if not img.isOpened():
+#     print("Erro ao acessar a imagen")
+#     exit()
 gray = img.copy()
 hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
